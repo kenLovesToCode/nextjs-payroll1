@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function EmployeePayslips() {
   return (
@@ -21,6 +21,7 @@ export default function EmployeePayslips() {
                 <Link className="px-1 py-2 text-sm font-semibold text-slate-900 dark:text-white relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-emerald-500 after:rounded-full" href="/payslips">Payslips</Link>
               </nav>
               <div className="flex items-center gap-1">
+                <ThemeToggle />
                 <button className="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors relative">
                   <span className="material-symbols-outlined">notifications</span>
                   <span className="absolute top-2.5 right-2.5 flex h-2 w-2 rounded-full bg-red-500 border-2 border-white dark:border-slate-900"></span>

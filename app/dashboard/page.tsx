@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function EmployeeDashboard() {
   return (
@@ -22,6 +22,7 @@ export default function EmployeeDashboard() {
               <Link className="text-sm font-medium text-slate-500 hover:text-[#13ec5b] transition-colors" href="/payslips">Payslips</Link>
             </nav>
             <div className="flex items-center gap-4">
+              <ThemeToggle />
               <button className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-[#13ec5b]/20 hover:text-[#13ec5b] transition-all">
                 <span className="material-symbols-outlined">notifications</span>
               </button>
